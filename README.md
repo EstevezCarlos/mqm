@@ -1,2 +1,2 @@
-# DefaultThemes
-default themes used in Typora
+# Markdown Quiz Maker
+Twin styles to make quizes rapidly with.
