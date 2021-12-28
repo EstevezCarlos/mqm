@@ -315,6 +315,7 @@ td {
   background: transparent;
   border-right: 1px solid transparent;
 }
+/** quick open **/
 .auto-suggest-container {
   border: 0px;
   background-color: #525c65;
@@ -477,6 +478,7 @@ h6.md-focus .md-attr,
 #md-searchpanel {
   border-bottom: 1px dashed #808080;
 }
+/** UI for electron */
 .context-menu {
   background-color: #42464a;
 }
@@ -595,6 +597,7 @@ footer {
   color: #eee;
   background: #333;
 }
+/** focus mode */
 .on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
   color: #686868 !important;
 }
@@ -616,6 +619,7 @@ footer {
 .on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
   color: #686868 !important;
 }
+/*diagrams*/
 #write .md-focus .md-diagram-panel {
   border: 1px solid #ddd;
   margin-left: -30px;
@@ -675,11 +679,4 @@ footer {
 }
 #write {
   cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
-}
-ol > li > ol > li > blockquote,
-ol > li > ul > li > blockquote,
-ul > li > ol > li > blockquote,
-ul > li > ul > li > blockquote {
-  color: #7a7;
-  margin: 0.5rem 0;
 }
