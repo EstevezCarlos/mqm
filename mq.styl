@@ -1,0 +1,37 @@
+@import 'common'
+
+ol > li > ol > li > blockquote,
+ol > li > ul > li > blockquote,
+ul > li > ol > li > blockquote,
+ul > li > ul > li > blockquote
+	color	inherit
+
+ol > li > ol > li,
+ol > li > ul > li,
+ul > li > ol > li,
+ul > li > ul > li,
+code,
+tt,
+var,
+kbd,
+pre
+	cursor	pointer
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
+
+ol > li > ol > li:hover,
+ol > li > ul > li:hover,
+ul > li > ol > li:hover,
+ul > li > ul > li:hover
+	color #cdf
+
+.green
+	color #7c7 !important
+.green:hover
+	color #7f7 !important
+.red
+	color #a33 !important
+.red:hover
+	color #c33 !important
