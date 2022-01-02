@@ -1,6 +1,6 @@
 const $ = x => document.querySelectorAll(x);
 const $$ = document.body;
-
+const counter = document.createElement('footer')
 window.onload = () => {
 
 	
@@ -8,6 +8,7 @@ window.onload = () => {
 
 	$$.innerHTML = $$.innerHTML.replace(new RegExp(	"<span class=\"cm-string\">'''"	,'g'),'<input data-ok="');
 	$$.innerHTML = $$.innerHTML.replace(new RegExp(	"'''</span>"					,'g'),'">');
+	$$.appendChild(counter)
 	
 	
 	for ( const el of $('ol>li>ol>li, ol>li>ul>li, ul>li>ol>li, ul>li>ul>li') ) {
@@ -49,7 +50,9 @@ function klik() {
 	if (el.firstChild instanceof HTMLQuoteElement)	{ el.classList.toggle('green');	 }
 	else											{ el.classList.toggle('red');    };
 }
-
+function count() {
+	counter.innerHTML = $('.green') - $('.red')
+}
 	// let focusable = $('pre input, pre * input, ol>li>ol, ol>li>ul, ul>li>ol, ul>li>ul');
 	// for (var i = 0, len = focusable.length; i < len; i++){
 	// 	focusable[i].setAttribute('tabindex', '0');
