@@ -6,7 +6,7 @@ Twin styles to make quizes rapidly with.
 Both styles are in dist folder. To make full use export with this appended in either body or head:
 
 ```html
-<style>
+<script>
     const $ = x => document.querySelectorAll(x);
     const $$ = document.body;
     const counter = document.createElement('footer')
@@ -80,7 +80,7 @@ Both styles are in dist folder. To make full use export with this appended in ei
         if ( x < 70 )	{	counter.classList.add('red');			counter.classList.remove('green');		}
         else			{	counter.classList.remove('red');		counter.classList.add('green');		}
     }
-</style>
+</script>
 ```
 
 ## Usage

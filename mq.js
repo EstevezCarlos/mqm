@@ -6,9 +6,9 @@ window.onload = () => {
 	
 
 
-	let s = $$.innerHTML
-	s = s.replace(new RegExp(	`<span class="cm-string">'''`	,'g'),'<input data-ok="');
-	$$.innerHTML = s.replace(new RegExp(	`'''</span>`					,'g'),'">');
+	let s 			= 	$$.innerHTML
+	s 				= 	s.replace(new RegExp(	`<span class="cm-string">'''`	,'g'),'<input data-ok="');
+	$$.innerHTML 	= 	s.replace(new RegExp(	`'''</span>`					,'g'),'">');
 	
 	$$.appendChild(counter)
 	
