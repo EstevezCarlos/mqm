@@ -1,0 +1,48 @@
+@import 'common'
+
+ol > li > ol > li > blockquote,
+ol > li > ul > li > blockquote,
+ul > li > ol > li > blockquote,
+ul > li > ul > li > blockquote
+	color	inherit
+
+ol > li > ol > li,
+ol > li > ul > li,
+ul > li > ol > li,
+ul > li > ul > li,
+code,
+tt,
+var,
+kbd,
+pre
+	cursor	pointer
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
+
+ol > li > ol > li:hover,
+ol > li > ul > li:hover,
+ul > li > ol > li:hover,
+ul > li > ul > li:hover
+	color #345
+
+.green
+	color #373 !important
+.green:hover
+	color #393 !important
+.red
+	color #700 !important
+.red:hover
+	color #900 !important
+
+ol > li > ol:focus,
+ol > li > ul:focus,
+ul > li > ol:focus,
+ul > li > ul:focus
+	background rgba(0,100,255,0.05)
+
+footer
+	font-size 3rem
+	text-align center
+	padding 3rem
