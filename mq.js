@@ -3,7 +3,10 @@ const $$ = document.body;
 const counter = document.createElement('footer')
 window.onload = () => {
 
-
+    for (const el of $('h1')) {
+        let content = el.innerHTML
+        
+    }
 
 
     let s = $$.innerHTML
