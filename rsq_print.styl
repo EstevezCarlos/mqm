@@ -1,0 +1,87 @@
+@import 'rsq_gh'
+
+:root
+    font-size 12px
+
+body
+    color black
+
+// ol>li>ol
+//     display flex
+//     flex flex-wrap
+//     gap 1rem
+
+// ol>li>ol>li
+//     width 25%
+
+ol>li>ol>li:nth-child(odd)
+    color #509
+
+ol>li>ol>li:nth-child(even)
+    color #094
+
+#write ol>li>ol>li>p
+    margin 0
+    width 100%
+    // background-color red
+    // color white
+
+code
+    padding 2px
+h1
+    display none
+
+#write ol>li
+    display flex
+    flex-wrap wrap
+    gap 4%
+    // flex-direction row-  
+    // padding 4%
+
+ol
+    width 100%
+    
+#write ol>li>pre
+    width 48%
+    order 99
+    // border solid red
+
+// ol>li>ol>li
+//     width 40%
+ol>li>ol
+    width 48%
+
+ol>li>ol>li>pre
+    width 100%
+    
+
+
+ol>li
+    border-top #ccc solid
+    width 100%
+    page-break-inside: avoid;
+    // margin 10px
+    // box-shadow: 3px 3px 12px 5px rgba(66, 68, 90, 0.2);
+#write>ol>li>p:first-child
+    // color #fff
+    // background-color #888
+    // text-align center
+    // padding-left 2px
+
+#write ol>li>ol>li
+    box-shadow none
+    margin 0px
+    display list-item
+    padding 0.1em
+    border-top none
+
+#write  ol > li > ol > li > blockquote
+    margin 0
+
+for i in (1..9)
+    #write>ol>li:nth-of-type({i})>p:first-child::before
+        content " "+i+".  "
+
+for i in (10..99)
+    #write>ol>li:nth-of-type({i})>p:first-child::before
+        content ""+i+".  "

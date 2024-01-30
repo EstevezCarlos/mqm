@@ -9,10 +9,12 @@ window.onload = () => {
     }
 
 
-    let s = $$.innerHTML
-    s = s.replace(new RegExp(`<span class="cm-string">'''`, 'g'), '<input data-ok="');
-    $$.innerHTML = s.replace(new RegExp(`'''</span>`, 'g'), '">');
-
+    $$.innerHTML = $$.innerHTML.replace(/«(.+?)»/g, (str) => {
+        console.log(str);
+        let replacement = `<input data-ok='${str.substring(1,str.length-1)}'>`
+        console.log(replacement);
+        return replacement
+    })
     $$.appendChild(counter)
 
 
@@ -21,7 +23,7 @@ window.onload = () => {
 
     }
 
-    for (const el of $('pre input, pre * input')) {
+    for (const el of $('input')) {
         el.addEventListener('input', check);
     }
 
