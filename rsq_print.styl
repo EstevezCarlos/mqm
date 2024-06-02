@@ -1,7 +1,7 @@
 @import 'rsq_gh'
 
 :root
-    font-size 12px
+    font-size 11px
 
 body
     color black
@@ -85,3 +85,10 @@ for i in (1..9)
 for i in (10..99)
     #write>ol>li:nth-of-type({i})>p:first-child::before
         content ""+i+".  "
+
+#write ul>li:only-child, ol>li:only-child 
+    color transparent !important
+
+#write ul>li:only-child::after, ol>li:only-child::after
+    color #ccc
+    content "_______________________"

@@ -452,7 +452,7 @@ footer {
   padding: 3rem;
 }
 :root {
-  font-size: 12px;
+  font-size: 11px;
 }
 body {
   color: #000;
@@ -802,4 +802,13 @@ ol>li {
 }
 #write>ol>li:nth-of-type(99)>p:first-child::before {
   content: '99.  ';
+}
+#write ul>li:only-child,
+ol>li:only-child {
+  color: transparent !important;
+}
+#write ul>li:only-child::after,
+ol>li:only-child::after {
+  color: #ccc;
+  content: "_______________________";
 }
