@@ -41,7 +41,8 @@
     color: #333;
     line-height: 1.6;
   }
-  #write {
+  #write,
+  main {
     max-width: 860px;
     margin: 0 auto;
     padding: 30px;
@@ -435,12 +436,14 @@
   }
 }
 @media only screen and (min-width: 1400px) {
-  #write {
+  #write,
+  main {
     max-width: 1024px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #write {
+  #write,
+  main {
     max-width: 1200px;
   }
 }
@@ -487,7 +490,8 @@
     color: #333;
     line-height: 1.6;
   }
-  #write {
+  #write,
+  main {
     max-width: 860px;
     margin: 0 auto;
     padding: 30px;
