@@ -1,6 +1,6 @@
 {
   "name": "mdqm",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Markdown Quiz Maker",
   "main": "main.js",
   "scripts": {
