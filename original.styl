@@ -36,7 +36,8 @@ body
     background bg
     fill currentColor
 
-#write
+#write,
+main
     max-width 914px
     padding-top 20px
 
@@ -284,7 +285,8 @@ a
 hr
     background #474d54    /* variable */
 
-#write>*:first-child
+#write>*:first-child,
+main>*:first-child
     margin-top 40px
 
 h1
@@ -372,7 +374,8 @@ td
 .typora-search-spinner > div
     background-color #fff
 
-#write pre.md-meta-block
+#write pre.md-meta-block,
+main pre.md-meta-block
     border-bottom 1px dashed #ccc
     background transparent
     padding-bottom 0.6em
@@ -400,7 +403,11 @@ td
 #write>h3:before,
 #write>h4:before,
 #write>h5:before,
-#write>h6:before
+#write>h6:before,
+main>h3:before,
+main>h4:before,
+main>h5:before,
+main>h6:before
     border none
     border-radius 0px
     color #888
@@ -408,16 +415,19 @@ td
     left -1.4rem
     top 0.2rem
 
-#write>h3.md-focus:before
+#write>h3.md-focus:before,
+main>h3.md-focus:before
     top 2px
 
-#write>h4.md-focus:before
+#write>h4.md-focus:before,
+main>h4.md-focus:before
     top 2px
 
 .md-toc-item
     color #A8C2DC
 
-#write div.md-toc-tooltip
+#write div.md-toc-tooltip,
+main div.md-toc-tooltip
     background-color bg
 
 .dropdown-menu .btn:hover,
@@ -647,7 +657,8 @@ footer
 
 
 /*diagrams*/
-#write .md-focus .md-diagram-panel
+#write .md-focus .md-diagram-panel,
+main .md-focus .md-diagram-panel
     border 1px solid #ddd
     margin-left -30px
 
@@ -703,5 +714,6 @@ footer
     background-color black
     color control-text-hover
 
-#write
+#write,
+main
     cursor -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto
