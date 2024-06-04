@@ -19,7 +19,13 @@ window.onload = () => {
 
 
     for (const el of $('ol>li>ol>li, ol>li>ul>li, ul>li>ol>li, ul>li>ul>li')) {
-        if (el.firstChild instanceof HTMLQuoteElement) { el.addEventListener('mousedown', green); } else { el.addEventListener('mousedown', red); }
+        // if (el.firstChild instanceof HTMLQuoteElement) {
+        if (el.childNodes[0] instanceof HTMLQuoteElement) {
+            el.addEventListener('mousedown', green)
+        }
+        else {
+            el.addEventListener('mousedown', red)
+        }
 
     }
 
